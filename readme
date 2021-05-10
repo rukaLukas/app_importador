@@ -1,0 +1,4 @@
+ - para executar o migrate precisamos rodar ele dentro do container, pois a conexao com o mysql está no container
+ para fazer isso fazemos:
+ 	# docker-compose up exec admin sh - 'admin' é o nome do service no docker-compose.yml
+ 	e agora dentro do container rodamos o migrate

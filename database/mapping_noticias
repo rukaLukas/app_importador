@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 0
+    }
+  },
+  "mappings": {
+    "noticias": {
+      "_all": {
+        "type": "string",
+        "index": "analyzed",
+        "analyzer": "portuguese"
+      },
+      "properties": {
+        "conteudo": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "subtitulo": {
+          "type": "string"
+        },
+        "fonte": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "titulo": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        },
+        "data_publicacao": {
+          "type": "date",
+          "index": "analyzed",
+          "format": "YYYY-MM-DD'T'HH:mm:ss"
+        },
+        "url": {
+          "type": "url",
+          "index": "analyzed",
+          "analyzer": "portuguese"
+        }
+      }
+    }
+  }
+}
