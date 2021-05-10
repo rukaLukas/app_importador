@@ -20,4 +20,3 @@ Route::post('noticias', [NoticiaController::class, 'store']);
 Route::get('noticias', [NoticiaController::class, 'index']);
 Route::get('paginate.documentos', [NoticiaController::class, 'paginate'])->name('paginate.documentos');
 Route::get('/noticias/{id}', [NoticiaController::class, 'show'])->name('conteudo_documento');
-Route::get('importadores/indexacao', [ImportadorController::class, 'indexacao']);
