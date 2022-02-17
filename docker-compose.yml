@@ -25,7 +25,7 @@ services:
     environment:            
       POSTGRES_USER: postgres      
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: knwein
+      POSTGRES_DB: importador
     volumes:
       - ./storage/dbdata:/var/lib/postgresql/data
     ports:
